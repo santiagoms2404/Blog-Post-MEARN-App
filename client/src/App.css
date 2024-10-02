@@ -1,5 +1,13 @@
+/* App.css */
+
 .App {
-  text-align: center;
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center horizontally */
+  justify-content: flex-start; /* Start from the top */
+  min-height: 100vh; /* Ensure full height of the viewport */
+  padding: 20px; /* Optional padding for aesthetics */
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
 }
 
 .App-logo {
@@ -14,18 +22,31 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  width: 100%; /* Make the header full width */
+  background-color: #282c34; /* Dark background by default */
   color: white;
+  padding: 20px 0; /* Optional padding for header */
+  display: flex; /* Use flexbox to center items in the header */
+  justify-content: center; /* Center navbar items */
 }
 
-.App-link {
-  color: #61dafb;
+.App-content {
+  width: 100%; /* Full width on smaller screens */
+}
+
+/* Light Theme Styles */
+.light {
+  background-color: #f8f9fa; /* Light background */
+  color: #000; /* Light text color */
+  min-height: 100vh;
+}
+
+
+/* Dark Theme Styles */
+.dark {
+  background-color: #282c34; /* Dark background */
+  color: #fff; /* Dark text color */
+  min-height: 100vh;
 }
 
 @keyframes App-logo-spin {
